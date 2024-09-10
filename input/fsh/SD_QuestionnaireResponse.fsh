@@ -4,10 +4,6 @@ Parent: http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse
 Description: """
 Questionnaire for the VCDS.
 
-The QuestionnaireResponse resource can be used flat, without reproducing the tree structure of the
-original questionnaire, since the responses are identified with the persistent code for the condition.
-However, the initiating system can use any structuration provided he keeps the question identifiers.
-
 The absence of an answer will be interpreted as 
 - FALSE for a Boolean condition, 
 - 0 for a numeric value,
