@@ -2,9 +2,8 @@ Profile: Questionnaire
 Id: Questionnaire
 Parent: http://hl7.org/fhir/StructureDefinition/Questionnaire
 Description: """
-This questionnaire is enriched with mandatory presentation directives for the client system.
-
-Groups and condi
+In this questionnaire, the relevant conditions for the CDS are identified with a persistent
+code from the Conditions code system.
 """
 
 * version 1..1

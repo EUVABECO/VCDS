@@ -15,7 +15,7 @@ included into the answer as a value set where codes include presentation
 directives.
 
 The input parameters are restated in the response. If they included further
-attroibutes that were not taken into account by the CDS, these attributes
+attributes that were not taken into account by the CDS, these attributes
 will be discarded, in order to have no ambiguity on the elements considered
 to build the recommendations.
 """
