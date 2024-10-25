@@ -9,7 +9,7 @@ It relies upon two specific services:
 
 The following rules apply when presenting a questionnaire:
 
-- conditions are items of type *boolean*, *integer*, *date*, *string*, *coding* or *quantity*.
+- conditions are items of type *boolean*, *integer*, *date*, *coding* or *quantity*.
 - If an item of type *boolean* has children items of other types than *display*, then these children questions should be asked only when the answer is *true* (implicit *enableWhen*).
 - if an item of type *display* has no children, and its parent is a *group* or a condition, then it is a helper for this parent. It may be presented only with a user action (hovering, unfolding, etc).
 - if a condition has the *required* attribute, then the presentation of the questionnaire must guide the user to answer it.
