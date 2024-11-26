@@ -4,7 +4,7 @@ Usage: #definition
 * name = "QuestionnaireRestrict"
 * status = #active
 * kind = #operation
-* description = "This operation is used to obtain a restricted questionnaire based upon the demographic characteristics of the subject"
+* description = "This operation is used to obtain a restricted questionnaire based upon the characteristics of the subject"
 * affectsState = false
 * code = #restrict
 * resource = #Questionnaire
@@ -12,21 +12,21 @@ Usage: #definition
 * type = true
 * instance = false
 * parameter[0]
-  * name = #dob
+  * name = #PatientIn
   * use = #in
-  * min = 0
+  * min = 1
   * max = "1"
-  * type = #date
-  * documentation = "Date of birth of the subject"
+  * type = #Resource
+  * targetProfile = Canonical(Patient)
+  * documentation = "Age and sex of the subject"
 * parameter[+]
-  * name = #sex
+  * name = #QuestionnaireResponse
   * use = #in
   * min = 0
   * max = "1"
-  * type = #code
-  * binding.strength = #required
-  * binding.valueSet = Canonical(AdministrativeGender)
-  * documentation = "Sex at birth of the subject"
+  * type = #Resource
+  * targetProfile = Canonical(QuestionnaireResponse)
+  * documentation = "Additional subject characteristics"
 * parameter[+]
   * name = #return
   * use = #out
