@@ -1,8 +1,8 @@
-Instance: ForecastReasons
+Instance: JustificationMessages
 InstanceOf: CodeSystem
 Title: "Justification messages for recommendations"
 Usage: #definition
-* name = "ForecastReasons"
+* name = "JustificationMessages"
 * status = #active
 * experimental = false
 * caseSensitive = false
@@ -72,10 +72,3 @@ second dose.
   * property[1]
     * code = #url
     * valueString = "https://production-apollon-documents.s3.fr-par.scw.cloud/dmfrh3c6ijljf0p42n0stlglq6wj"
-
-ValueSet: ForecastReasons
-Id: ForecastReasons
-Title: "Forecast reasons"
-Description: "Justification messages for recommendations"
-* ^experimental = false
-* include codes from system ForecastReasons

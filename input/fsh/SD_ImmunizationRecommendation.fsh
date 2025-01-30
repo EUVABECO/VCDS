@@ -23,3 +23,11 @@ Description: """
 The version of the VCDS ruletset that was used to elaborate this recommendation.
 """
 * value[x] only string
+
+ValueSet: ForecastReasons
+Id: ForecastReasons
+Title: "Forecast reasons for a recommendation"
+Description: "Either a justification message or just a condition from the questionnaire"
+* ^experimental = false
+* include codes from system JustificationMessages
+* include codes from system Conditions

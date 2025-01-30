@@ -8,8 +8,9 @@ Description: "A recommendation for Diptheria catchup"
 * recommendation[0]
   * targetDisease = $SCT#397428000
   * forecastStatus = $FStatus#overdue
-  * forecastReason[0] = ForecastReasons#64a2d4e1-a5dd-48f8-8de1-314f092cb767
-  * forecastReason[+] = ForecastReasons#b1b41a92-9404-4607-beb0-1f694167e093
+  * forecastReason[0] = JustificationMessages#64a2d4e1-a5dd-48f8-8de1-314f092cb767
+  * forecastReason[+] = JustificationMessages#b1b41a92-9404-4607-beb0-1f694167e093
+  * forecastReason[+] = Conditions#f8cedc4a-283b-43f0-ae53-196bbcb5d19a
   * dateCriterion.code = http://loinc.org#59778-1 "Date when overdue for immunization"
   * dateCriterion.value = "2020-04-03"
 

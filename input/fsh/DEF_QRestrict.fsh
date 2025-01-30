@@ -12,7 +12,7 @@ Usage: #definition
 * type = true
 * instance = false
 * parameter[0]
-  * name = #PatientIn
+  * name = #Patient
   * use = #in
   * min = 1
   * max = "1"
